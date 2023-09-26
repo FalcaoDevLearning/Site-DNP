@@ -1,0 +1,111 @@
+body {
+    background-color: #b1b1b11e;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #FFD700;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.conteudoh {
+    display: block;
+    background-color: #ffffff;
+    padding: 30%;
+    margin: 10%;
+    box-shadow: 3px 3px 9px #ffd900;
+}
+
+
+@media screen and (max-width: 722px) {
+    .menu ul {
+        flex-direction: column;
+    }
+}
+
+.menu ul li a {
+    padding: 30px 10px;
+    position: relative;
+    display: inline-block;
+    font-family: consolas;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+ul a:hover {
+    background: #ffe600;
+}
+
+.logo {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+img {
+    width: 10%;
+    height: auto;
+    margin-right: 300px;
+}
+
+@media screen and (max-width: 1100px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .menu img {
+        margin-right: 0;
+    }
+
+    .menu ul {
+        margin-top: 20px;
+    }
+
+    .menuA {
+        padding: 1em 0;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .menu img {
+        width: 80px;
+        margin-right: 0;
+    }
+
+    .menu ul {
+        margin-top: 10px;
+    }
+
+    .menuA {
+        padding: 0.8em 0;
+    }
+}
